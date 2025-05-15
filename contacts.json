@@ -1,0 +1,23 @@
+{
+  "contact": {
+    "firstName": "Sylisa",
+    "lastName": "Hall",
+    "email": "sylisa@notreal.com",
+    "favoriteColor": "Pink",
+    "birthday": "05/25/02"
+  },
+  "contact2": {
+    "firstName": "Liam",
+    "lastName": "Foushee",
+    "email": "boyfriend@notreal.com",
+    "favoriteColor": "Green",
+    "birthday": "06/06/01"
+  },
+  "contact3": {
+    "firstName": "Holden",
+    "lastName": "Carlson",
+    "email": "holden@notreal.com",
+    "favoriteColor": "Blue",
+    "birthday": "02/15/08"
+  }
+}
