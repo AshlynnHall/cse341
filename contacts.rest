@@ -1,5 +1,32 @@
 # Get all contacts
-GET http://localhost:3000/contacts
-
+GET https://cse341-zhyh.onrender.com/contacts
+###
 # Get a single contact (replace <id> with a real _id from your collection)
-GET http://localhost:3000/contacts/<id>
+GET https://cse341-zhyh.onrender.com/contacts/682642e1b350de593f83db41
+###
+# Create a new contact
+POST https://cse341-zhyh.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Ashlynn",
+  "lastName": "Hall",
+  "email": "ashlynn@notreal.com",
+  "favoriteColor": "Orange",
+  "birthday": "10/09/00"
+}
+###
+# Update a contact (replace <id> with a real contact _id)
+PUT https://cse341-zhyh.onrender.com/contacts/682642e1b350de593f83db41
+Content-Type: application/json
+
+{
+  "firstName": "Shulisa",
+  "lastName": "Hall",
+  "email": "lilsis@gmail.com",
+  "favoriteColor": "Red",
+  "birthday": "05/25/02"
+}
+###
+# Delete a contact (replace <id> with a real contact _id)
+DELETE https://cse341-zhyh.onrender.com/contacts/682642e1b350de593f83db41 
