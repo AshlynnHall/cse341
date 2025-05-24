@@ -1,7 +1,45 @@
 # Get all contacts
+GET http://localhost:3000/contacts
+###
+# Get a single contact
+GET http://localhost:3000/contacts/682642e1b350de593f83db41
+###
+# Create a new contact
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Jonah",
+  "lastName": "Joe",
+  "email": "jonah@notreal.com",
+  "favoriteColor": "Orange",
+  "birthday": "01/17/98"
+}
+###
+# Update a contact
+PUT http://localhost:3000/contacts/682642e1b350de593f83db41
+Content-Type: application/json
+
+{
+  "firstName": "Sylisa",
+  "lastName": "Hall",
+  "email": "lilsis@gmail.com",
+  "favoriteColor": "Pink",
+  "birthday": "05/25/02"
+}
+###
+# Delete a contact
+DELETE http://localhost:3000/contacts/6831fe2e7127692acc2230f4
+
+# RENDER LINKS BELOW
+# RENDER LINKS BELOW
+# RENDER LINKS BELOW
+# RENDER LINKS BELOW
+
+# Get all contacts
 GET https://cse341-zhyh.onrender.com/contacts
 ###
-# Get a single contact (replace <id> with a real _id from your collection)
+# Get a single contact
 GET https://cse341-zhyh.onrender.com/contacts/682642e1b350de593f83db41
 ###
 # Create a new contact
@@ -9,24 +47,24 @@ POST https://cse341-zhyh.onrender.com/contacts
 Content-Type: application/json
 
 {
-  "firstName": "Ashlynn",
-  "lastName": "Hall",
-  "email": "ashlynn@notreal.com",
+  "firstName": "Jonah",
+  "lastName": "Joe",
+  "email": "jonah@notreal.com",
   "favoriteColor": "Orange",
-  "birthday": "10/09/00"
+  "birthday": "01/17/98"
 }
 ###
-# Update a contact (replace <id> with a real contact _id)
+# Update a contact
 PUT https://cse341-zhyh.onrender.com/contacts/682642e1b350de593f83db41
 Content-Type: application/json
 
 {
-  "firstName": "Shulisa",
+  "firstName": "Sylisa",
   "lastName": "Hall",
   "email": "lilsis@gmail.com",
-  "favoriteColor": "Red",
+  "favoriteColor": "Pink",
   "birthday": "05/25/02"
 }
 ###
-# Delete a contact (replace <id> with a real contact _id)
-DELETE https://cse341-zhyh.onrender.com/contacts/682642e1b350de593f83db41 
+# Delete a contact
+DELETE https://cse341-zhyh.onrender.com/contacts/6831fe2e7127692acc2230f4
